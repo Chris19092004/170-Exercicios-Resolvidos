@@ -150,22 +150,6 @@ Exercícios voltados à manipulação e à análise de conjuntos de dados, aprox
 
 ---
 
-## 🚀 Como usar
-
-1. Clone o repositório:
-   ```bash
-   git clone <URL-DO-REPOSITÓRIO>
-   cd <NOME-DO-REPOSITÓRIO>
-   ```
-2. Certifique-se de ter o **Python 3** instalado:
-   ```bash
-   python --version
-   ```
-3. Execute qualquer exercício:
-   ```bash
-   python caminho/do/exercicio.py
-   ```
-
 ## 🔗 Fonte e créditos
 
 Os enunciados pertencem ao site **[exercicios.dunossauro.com](https://exercicios.dunossauro.com/)**. As soluções deste repositório são de minha autoria, escritas durante meus estudos.
