@@ -4,7 +4,6 @@
 ![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120)
-![Java](https://img.shields.io/badge/Java-ED8B00)
 ![Status](https://img.shields.io/badge/status-em%20progresso-yellow)
 
 > **+170 exercícios, várias resoluções.** A mesma lista de desafios, do "Hello World" a projetos com manipulação de dados, resolvida em diferentes linguagens de programação.
@@ -24,7 +23,7 @@ Ele nasceu da expansão de um outro repositório, focado em resoluções em Pyth
 ## 🤔 Por que resolver os mesmos exercícios em várias linguagens?
 
 - **Lógica é separada de sintaxe.** Quando o problema já está resolvido, o desafio passa a ser expressar a mesma ideia em outra linguagem. Isso deixa claro o que é raciocínio e o que é detalhe da linguagem.
-- **Cada linguagem ensina algo diferente.** O Python mostra como ser produtivo e expressivo, o C expõe memória e ponteiros, o C++ une controle de baixo nível a abstrações, e o C# e o Java mostram a orientação a objetos em ambientes gerenciados, e por aí vai.
+- **Cada linguagem ensina algo diferente.** O Python mostra como ser produtivo e expressivo, o C expõe memória e ponteiros, o C++ une controle de baixo nível a abstrações, e o C# mostra a orientação a objetos em ambientes gerenciados, e por aí vai.
 - **Comparação revela trade-offs.** Ver duas ou cinco soluções para o mesmo problema mostra o que cada linguagem facilita, o que exige mais código e por quê.
 - **Fundamentos que se transferem.** Tipagem, gerenciamento de memória, compilação, coleções e orientação a objetos são conceitos que reaparecem em quase toda linguagem.
 - **Código idiomático.** Em vez de traduzir linha a linha, o objetivo é escrever cada solução do jeito que a linguagem pede, com suas coleções, bibliotecas e convenções.
@@ -37,7 +36,6 @@ Ele nasceu da expansão de um outro repositório, focado em resoluções em Pyth
 | **C** | Procedural | Compilada (nativa) | Estática | Manual | 🚧 |
 | **C++** | Multiparadigma | Compilada (nativa) | Estática | Manual, com RAII e *smart pointers* | ⏳ |
 | **C#** | Orientada a objetos | Compilada para IL e executada no .NET | Estática | Automática (GC) | ⏳ |
-| **Java** | Orientada a objetos | Compilada para *bytecode* e executada na JVM | Estática | Automática (GC) | ⏳ |
 
 **Legenda:** ✅ concluída · 🚧 em progresso · ⏳ planejada
 
@@ -85,22 +83,6 @@ string? nome = Console.ReadLine();
 Console.WriteLine($"Olá, {nome}!");
 ```
 
-**Java**
-```java
-import java.util.Scanner;
-
-public class Ex01 {
-    public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        System.out.print("Qual é o seu nome? ");
-        String nome = entrada.nextLine();
-        System.out.println("Olá, " + nome + "!");
-    }
-}
-```
-
-> No C#, o exemplo usa *top-level statements* (C# 9 ou superior). Em C e C++, o `cin >> nome` e o `scanf("%99s")` leem apenas uma palavra.
-
 ## 📚 Categorias de exercícios
 
 | # | Categoria | Exercícios | O que cobre |
@@ -121,8 +103,8 @@ public class Ex01 {
 
 Alguns exercícios mudam de forma conforme a linguagem. A tabela mostra como cada conceito costuma aparecer:
 
-| Conceito | Python | C | C++ | C# | Java |
-|----------|--------|---|-----|----|------|
+| Conceito | Python | C | C++ | C# |
+|----------|--------|---|-----|----|
 | **Lista** | `list` | Array / `malloc` | `std::vector` | `List<T>` | `ArrayList` |
 | **Dicionário** | `dict` | Implementação própria | `std::map` / `std::unordered_map` | `Dictionary<K, V>` | `HashMap` |
 | **String** | `str` | `char[]` com `'\0'` | `std::string` | `string` | `String` |
@@ -133,39 +115,19 @@ Na categoria **Classes**, o C não possui orientação a objetos nativa, então 
 
 ## 📊 Progresso
 
-| # | Categoria | Exercícios | Python | C | C++ | C# | Java |
-|:-:|-----------|:----------:|:------:|:-:|:---:|:--:|:----:|
-| 1 | Estrutura sequencial | 18 | 🚧 | 🚧 | ⏳ | ⏳ | ⏳ |
-| 2 | Estrutura de decisão | 28 | 🚧 | 🚧 | ⏳ | ⏳ | ⏳ |
-| 3 | Estrutura de repetição | 51 | 🚧 | 🚧 | ⏳ | ⏳ | ⏳ |
-| 4 | Listas | 24 | 🚧 | 🚧 | ⏳ | ⏳ | ⏳ |
-| 5 | Funções | 14 | 🚧 | 🚧 | ⏳ | ⏳ | ⏳ |
-| 6 | Strings | 14 | 🚧 | 🚧 | ⏳ | ⏳ | ⏳ |
-| 7 | Manipulação de arquivos | 2 | 🚧 | 🚧 | ⏳ | ⏳ | ⏳ |
-| 8 | Classes | 17 | 🚧 | 🚧 | ⏳ | ⏳ | ⏳ |
-| 9 | Projetos | 3 | 🚧 | 🚧 | ⏳ | ⏳ | ⏳ |
-| 10 | Dados | 6 | 🚧 | 🚧 | ⏳ | ⏳ | ⏳ |
+| # | Categoria | Exercícios | Python | C | C++ | C# | 
+|:-:|-----------|:----------:|:------:|:-:|:---:|:--:|
+| 1 | Estrutura sequencial | 18 | ✅ | 🚧 | ⏳ | ⏳ | 
+| 2 | Estrutura de decisão | 28 | 🚧 | 🚧 | ⏳ | ⏳ | 
+| 3 | Estrutura de repetição | 51 | 🚧 | 🚧 | ⏳ | ⏳ | 
+| 4 | Listas | 24 | 🚧 | 🚧 | ⏳ | ⏳ | 
+| 5 | Funções | 14 | 🚧 | 🚧 | ⏳ | ⏳ | 
+| 6 | Strings | 14 | 🚧 | 🚧 | ⏳ | ⏳ | 
+| 7 | Manipulação de arquivos | 2 | 🚧 | 🚧 | ⏳ | ⏳ | 
+| 8 | Classes | 17 | 🚧 | 🚧 | ⏳ | ⏳ | 
+| 9 | Projetos | 3 | 🚧 | 🚧 | ⏳ | ⏳ | 
+| 10 | Dados | 6 | 🚧 | 🚧 | ⏳ | ⏳ | 
 
-## 🗂️ Estrutura do repositório
-
-```text
-.
-├── python/
-│   ├── 01-estrutura-sequencial/
-│   │   ├── ex01.py
-│   │   └── ...
-│   ├── 02-estrutura-de-decisao/
-│   └── ...
-├── c/
-│   ├── 01-estrutura-sequencial/
-│   │   ├── ex01.c
-│   │   └── ...
-│   └── ...
-├── cpp/
-├── csharp/
-├── java/
-└── README.md
-```
 
 **Convenções:**
 - Cada linguagem tem a sua pasta, com as mesmas dez categorias dentro.
