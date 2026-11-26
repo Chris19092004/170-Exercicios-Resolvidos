@@ -24,7 +24,7 @@ Ele nasceu da expansão de um outro repositório, focado em resoluções em Pyth
 
 - **Lógica é separada de sintaxe.** Quando o problema já está resolvido, o desafio passa a ser expressar a mesma ideia em outra linguagem. Isso deixa claro o que é raciocínio e o que é detalhe da linguagem.
 - **Cada linguagem ensina algo diferente.** O Python mostra como ser produtivo e expressivo, o C expõe memória e ponteiros, o C++ une controle de baixo nível a abstrações, e o C# mostra a orientação a objetos em ambientes gerenciados, e por aí vai.
-- **Comparação revela trade-offs.** Ver duas ou cinco soluções para o mesmo problema mostra o que cada linguagem facilita, o que exige mais código e por quê.
+- **Comparação revela trade-offs.** Ver mais de uma solução para o mesmo problema mostra o que cada linguagem facilita, o que exige mais código e por quê.
 - **Fundamentos que se transferem.** Tipagem, gerenciamento de memória, compilação, coleções e orientação a objetos são conceitos que reaparecem em quase toda linguagem.
 - **Código idiomático.** Em vez de traduzir linha a linha, o objetivo é escrever cada solução do jeito que a linguagem pede, com suas coleções, bibliotecas e convenções.
 
@@ -39,7 +39,7 @@ Ele nasceu da expansão de um outro repositório, focado em resoluções em Pyth
 
 **Legenda:** ✅ concluída · 🚧 em progresso · ⏳ planejada
 
-## 🔍 O mesmo exercício, cinco linguagens
+## 🔍 O mesmo exercício, VÁRIAS linguagens
 
 Um programa simples que lê um nome e exibe uma saudação mostra bem as diferenças de estilo.
 
