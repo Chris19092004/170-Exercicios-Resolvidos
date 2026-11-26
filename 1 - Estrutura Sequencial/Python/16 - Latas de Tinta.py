@@ -9,7 +9,7 @@ from math import ceil
 area = float(input("Digite o tamanho (em m²) da área a ser pintada: "))
 
 litro_metro = 1 / 3
-litros_necessarios = area * litros_metro
+litros_necessarios = area * litro_metro
 litros_lata = 18
 preco_lata = 80
 
